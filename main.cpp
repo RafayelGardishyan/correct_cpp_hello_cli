@@ -4,9 +4,9 @@ int main(int argc, char* argv[])
 {
     std::cout << "Hello";
     for(int i=0; i!=argc; i++)
-    {
-       if(std::string(argv[i]) == "world"){
-           std::cout << " world";
+    { 
+       if(i == 1){
+           std::cout << std::string(argv[i]);
        }
     }
     std::cout << "\n";
